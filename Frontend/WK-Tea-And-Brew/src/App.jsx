@@ -1,0 +1,27 @@
+import { BrowserRouter,Routes,Route } from "react-router-dom"
+import Layout from "./components/Layout.jsx"
+import Login from "./modules/auth/view/Login.jsx"
+import Register from "./modules/auth/view/Register.jsx"
+import Home from "./modules/home/view/Home.jsx"
+import Menu from "./modules/menu/view/Menu.jsx"
+
+function App() {
+
+  return (  
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/wk-tea-and-brew/" element={<Layout/>}>
+            <Route index element={<Home/>}/>
+            {/* <Route path="home" element={<Home/>}> */}
+            <Route path="login" element={<Login/>}/>
+            <Route path="register" element={<Register/>}/>
+            <Route path="menu" element={<Menu/>}/>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
+}
+
+export default App

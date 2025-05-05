@@ -1,0 +1,91 @@
+.register-page-container{
+    background-image: url("../../../assets/image/placeholder.png");
+}
+
+.register-container{
+    display: flex;
+    flex-direction: row;
+    margin-block: 200px;
+    margin-inline: 20%;
+}
+
+.register-nav-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(19, 40, 57, 0.7);
+    color: white;
+    border-radius: 30px 0px 0px 30px;
+    padding-block: 50px;
+    padding-inline: 7%;
+}
+
+.register-nav-login button{
+    background-color: white;
+    color: black;
+    padding-inline: 20%;
+    position: relative;
+    left: 25%;
+    margin-block: 30px;
+}
+
+.register-nav-login button:hover{
+    background-color: rgb(223, 223, 223);
+}
+
+.register-nav-login h1{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.register-nav-login q{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    padding-inline: 15%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.register-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0px 30px 30px 0px;
+    padding-block: 30px;
+    padding-inline: 10%;
+    color: rgba(75, 0, 0, 1);
+}
+
+.register-form button{
+    margin-top: 30px;
+}
+
+.register-form h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-input-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 50px;
+ }
+
+.form-input{
+    border: none;
+    box-shadow: 1px 3px 3px rgb(175, 175, 175);
+    font-size: 16px;
+    color: rgba(75, 0, 0, 1);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-block: 10px;
+}
+
+.form-tac{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+}

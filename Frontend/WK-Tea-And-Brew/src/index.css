@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    overflow-x:hidden ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    cursor: pointer;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1000px
+}

@@ -1,0 +1,72 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 5%;
+    padding-block: 50px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    box-shadow: 0px -1px 3px rgb(74, 74, 74);
+    align-items: center;
+    row-gap: 50px;
+}
+
+.footer-logo-action{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+}
+
+.footer-logo-action p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+
+.footer-external-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-external-links{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10%;
+    padding-left: 20%;
+}
+
+.footer img{
+    width: 50%;
+}
+
+.footer-external-links img{
+    width: 20%;
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10%;
+    width: 80%;
+}
+
+.footer-nav li{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-nav dl{
+    display: flex;
+    flex-direction: column;
+    font-weight: lighter;
+    font-size: smaller;
+}
