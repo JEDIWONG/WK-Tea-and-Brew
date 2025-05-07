@@ -7,8 +7,8 @@ import coffeeIcon from '../../../assets/icons/menu/coffee_icon.svg';
 import teaIcon from '../../../assets/icons/menu/tea_icon.svg';
 import wineIcon from '../../../assets/icons/menu/wine_icon.svg';
 import specialtyIcon from '../../../assets/icons/menu/specialty_icon.svg';
-import ProductCard from "./ProductCard";
-import expImg from "../../../assets/image/specialty_exp.jpg";
+import ProductList from "./ProductList";
+import Category from "../model/Category";
 
 function IconImg(props){
     return(
@@ -71,29 +71,24 @@ function ProductPanel() {
                     <Tab className="tab-btn all" icon={<IconImg icon={allIcon}/>} iconPosition="start" label="All" {...a11yProps(0)} />
                     <Tab className="tab-btn tab-coffee" icon={<IconImg icon={coffeeIcon}/>} iconPosition="start" label="Coffee" {...a11yProps(1)} />
                     <Tab className="tab-btn tab-tea" icon={<IconImg icon={teaIcon}/>} iconPosition="start" label="Tea" {...a11yProps(2)} />
-                    <Tab className="tab-btn tab-wine" icon={<IconImg icon={wineIcon}/>} iconPosition="start" label="Wine" {...a11yProps(2)} />
-                    <Tab className="tab-btn tab-specialty" icon={<IconImg icon={specialtyIcon}/>} iconPosition="start" label="Specialty" {...a11yProps(2)} />
+                    <Tab className="tab-btn tab-wine" icon={<IconImg icon={wineIcon}/>} iconPosition="start" label="Wine" {...a11yProps(3)} />
+                    <Tab className="tab-btn tab-specialty" icon={<IconImg icon={specialtyIcon}/>} iconPosition="start" label="Specialty" {...a11yProps(4)} />
                 </Tabs>
             </Box>
 
             <TabPanel value={value} index={0}>
-
-                <div className="product-list-container">
-                    <ProductCard imgUrl={expImg} title = "Example Product Name" desc="example desc long long long" price={12.00}/>
-                    <ProductCard imgUrl={expImg} title = "Example Product Name" desc="example desc long long long" price={12.00}/>
-                    <ProductCard imgUrl={expImg} title = "Example Product Name" desc="example desc long long long" price={12.00}/>
-                    <ProductCard imgUrl={expImg} title = "Example Product Name" desc="example desc long long long" price={12.00}/>
-                    <ProductCard imgUrl={expImg} title = "Example Product Name" desc="example desc long long long" price={12.00}/>
-                </div>
+                <ProductList category=""></ProductList>
             </TabPanel>
 
-            <TabPanel value={value} index={1}>
-                Item 2
-            </TabPanel>
-
-            <TabPanel value={value} index={2}>
-                Item 3
-            </TabPanel>
+            {
+                Category.map((c)=>{
+                    return(
+                        <TabPanel value={value} index={c.id}>
+                            <ProductList category={c.title}></ProductList>                           
+                        </TabPanel>
+                    );
+                })
+            }
             
         </Box>
     );

@@ -11,7 +11,7 @@ function Menu(){
                     <SearchBar></SearchBar>
                 </div>
 
-                <ProductPanel></ProductPanel>
+                <ProductPanel/>
             </div>
         </>
     )

@@ -3,8 +3,12 @@
     flex-direction: row;
     align-items: center;
     cursor: pointer;
-    width: 40%;
     padding-inline: 1%;
+}
+
+.product-link{
+    text-decoration: none;
+    color: inherit;
 }
 
 .product-card-container:hover{
@@ -12,7 +16,7 @@
 }
 
 .product-card-img{
-    width: 30%;
+    width: 200px;
     height: 200px;
     background-position: center;
     background-size: cover;
@@ -41,10 +45,5 @@
 }
 
 .product-card-price{
-    font-size: 24px;
-}
-
-.product-card-price::before{
-    content: "................................";
     font-size: 24px;
 }
