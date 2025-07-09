@@ -23,3 +23,17 @@ a{
     background-size: cover;
     min-height: 1000px
 }
+
+.overlay{
+    background-color: rgba(44, 44, 44, 0.79);
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}

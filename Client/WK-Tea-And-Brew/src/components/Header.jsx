@@ -30,11 +30,14 @@ function Header() {
   return (
     <>
       <header className="header">
-          <img src={logo}></img>
+          <Link to="/wk-tea-and-brew/">
+            <img src={logo}></img>
+          </Link>
+            
           <nav>
               <ul>
                   <li>
-                    <Link className="link" to="/wk-tea-and-brew/">About</Link>
+                    <Link className="link" to="/wk-tea-and-brew/about">About</Link>
                   </li>
                   <li>
                     <Link className="link" to="/wk-tea-and-brew/menu">Menu</Link>
